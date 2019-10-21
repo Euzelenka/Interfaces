@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/parallax.css">
+    <link rel="stylesheet" href="css/player.css">
+
+    <title>A jugar!</title>
+  </head>
+
+  <body id="contenedor">
+    <div id="vidas">
+      <img src="images/heart.png" id="vida0" alt="">
+      <img src="images/heart.png" id="vida1" alt="">
+      <img src="images/heart.png" id="vida2" alt="">
+    </div>
+    <div id="cloud">
+      <div class="score">Puntos <span id="score-num">0</span></div>
+
+      <div id="mensaje">
+        <p>GAME OVER</p>
+        <p>PUNTOS: <span id="score-mensaje">0</span></p>
+        <button type="button" class="btn-menu" id="btn-menu" name="button">MENU</button>
+        <button type="button" class="btn-menu" id="btn-reiniciar" name="button">REINICIAR</button>
+      </div>
+
+      <div id="mountain">
+        <div id="trees">
+            <div id="floor">
+
+              <div id="player" class="idle"></div>
+              <div id="coin"></div>
+              <div class="enemy-walk" id="enemy"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="js/Player.js" charset="utf-8"></script>
+  <script src="js/Enemy.js" charset="utf-8"></script>
+  <script src="js/Coin.js" charset="utf-8"></script>
+  <script src="js/Master.js" charset="utf-8"></script>
+</html>

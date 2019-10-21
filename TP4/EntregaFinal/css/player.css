@@ -1,0 +1,84 @@
+.idle {
+ width: 140px;
+ height: 160px;
+ z-index: 10;
+ background: url('../images/moves/idle.png') left center;
+ animation: idle .8s steps(10) infinite;
+}
+
+@keyframes idle {
+	100% { background-position: -1509px; }
+}
+
+.jump {
+  width: 140px;
+  height: 170px;
+  background-image: url('../images/moves/jump.png');
+  animation: jump .8s steps(10) infinite;
+}
+
+@keyframes jump {
+  0%{background-position: -1509px;}
+
+}
+
+.dead {
+  width: 240px;
+  height: 180px;
+  background-image: url('../images/moves/dead.png');
+  animation: dead 0.8s steps(10);
+  animation-iteration-count: 0.9;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dead {
+	100% { background-position: -2373px; }
+}
+
+.walk {
+  width: 130px;
+  height: 170px;
+  background-image: url('../images/moves/walk.png');
+  animation: walk .8s steps(10) infinite;
+}
+
+@keyframes walk {
+	100% { background-position: -1509px; }
+}
+
+.enemy-walk {
+  width: 120px;
+  height: 178px;
+  background-image: url('../images/moves/enemy2.png');
+  animation: walk-enemy .8s steps(10) infinite;
+  transform: scaleX(-1);
+}
+
+
+@keyframes walk-enemy {
+ 100%{background-position: -1506px;}
+}
+
+.enemy-idle {
+  height: 173px;
+  width: 128px;
+  background: url('../images/moves/enemy-stop.png');
+  animation: idle-enemy .8s steps(15) infinite;
+  transform: scaleX(-1);
+}
+
+@keyframes idle-enemy {
+ 100%{background-position: -2260px;}
+}
+
+#coin {
+ width: 90px;
+ height: 90px;
+ background: url('../images/coin.png') left center;
+ animation: coin-rotation .8s steps(10) infinite;
+ transform: scale(0.3);
+}
+
+@keyframes coin-rotation {
+ 100%{background-position: -1000px;}
+}
